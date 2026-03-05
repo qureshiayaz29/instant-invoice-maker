@@ -177,14 +177,25 @@ npm test
 
 ## 🌐 Deployment
 
-The app can be deployed easily on any static hosting platform:
+### GitHub Pages (configured)
 
-- [Cloudflare Pages](https://pages.cloudflare.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://netlify.com/)
-- [GitHub Pages](https://pages.github.com/)
+This project is set up to auto-deploy to GitHub Pages via GitHub Actions.
 
-Because the app is fully static, deployment is extremely simple.
+**One-time setup:**
+
+1. Push the repo to GitHub
+2. Go to **Settings → Pages → Source** and select **GitHub Actions**
+3. Push to `main` — the workflow handles the rest
+
+App will be live at:
+```
+https://qureshiayaz29.github.io/instant-invoice-maker/
+```
+
+**Manual deploy** (alternative):
+```bash
+npm run deploy
+```
 
 ---
 
