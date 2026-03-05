@@ -1,5 +1,9 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="512" height="512" rx="100" fill="#3B82F6"/>
-<rect x="120" y="120" width="272" height="272" rx="24" fill="white"/>
-<path d="M180 200H320M180 256H320M180 312H250" stroke="#3B82F6" stroke-width="32" stroke-linecap="round"/>
+<?xml version="1.0" encoding="utf-8"?>
+<svg fill="#ffffff" width="512px" height="512px" viewBox="0 0 24 24" id="thunder-sign-circle"
+     xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+    <rect x="1.5" y="1.5" width="21" height="21" rx="2" ry="2" fill="white"/>
+    <polyline id="secondary" points="12 16 14 12 10 12 12 8"
+              style="fill: none; stroke: rgb(59, 130, 246); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></polyline>
+    <circle id="primary" cx="12" cy="12" r="9"
+            style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></circle>
 </svg>

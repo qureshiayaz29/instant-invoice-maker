@@ -33,8 +33,8 @@ describe('PWA - Offline / PWA Support', () => {
         const viteConfig = readFileSync(resolve(PROJECT_ROOT, 'vite.config.js'), 'utf-8');
 
         // Manifest fields needed for browser install prompt eligibility
-        expect(viteConfig).toContain('Instant Invoice');   // full name
-        expect(viteConfig).toContain('Invoice');            // short_name
+        expect(viteConfig).toContain('Tez Billing');   // full name
+        expect(viteConfig).toContain('Tez');            // short_name
         expect(viteConfig).toContain('standalone');         // display mode
         expect(viteConfig).toContain('icon.svg');           // at least one icon
         expect(viteConfig).toContain('theme_color');

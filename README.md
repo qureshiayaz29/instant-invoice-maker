@@ -1,6 +1,6 @@
-# Instant Invoice Maker
+# Tez Billing
 
-A **fast, minimal, no-login invoice generator** designed for small shopkeepers and freelancers who need to create invoices quickly.
+A **fast, minimal, no-login billing app** designed for small shopkeepers and freelancers who need to create invoices quickly.
 
 The app opens directly to an invoice screen where users can add products and instantly **print or download a PDF invoice**. Shop details are saved locally in the browser so the user can open the site every day and start billing immediately.
 

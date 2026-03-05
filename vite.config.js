@@ -21,9 +21,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'Instant Invoice',
-        short_name: 'Invoice',
-        description: 'Extremely fast, offline capable invoice generator for small shopkeepers.',
+        name: 'Tez Billing',
+        short_name: 'Tez Billing',
+        description: 'Extremely fast, offline capable billing app for small shopkeepers.',
         theme_color: '#ffffff',
         background_color: '#ffffff',
         display: 'standalone',

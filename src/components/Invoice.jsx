@@ -100,7 +100,7 @@ export default function Invoice() {
             <div className="bg-white rounded-2xl shadow-sm p-4 flex flex-col sm:flex-row justify-between items-center gap-4 no-print border border-gray-100">
                 <div className="flex items-center gap-3 w-full sm:w-auto">
                     <img src={`${import.meta.env.BASE_URL}icon.svg`} alt="Logo" className="w-10 h-10 rounded-xl shadow-md" />
-                    <h2 className="text-xl font-bold font-sans text-gray-800 tracking-tight">Instant Invoice</h2>
+                    <h2 className="text-xl font-bold font-sans text-gray-800 tracking-tight">Tez Billing</h2>
                 </div>
 
                 <div className="flex items-center gap-3 w-full sm:w-auto">
