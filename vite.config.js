@@ -1,0 +1,36 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+import { VitePWA } from 'vite-plugin-pwa'
+
+export default defineConfig({
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/tests/setup.js',
+    css: false,
+  },
+  plugins: [
+    react(),
+    tailwindcss(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+      manifest: {
+        name: 'Instant Invoice',
+        short_name: 'Invoice',
+        description: 'Extremely fast, offline capable invoice generator for small shopkeepers.',
+        theme_color: '#ffffff',
+        background_color: '#ffffff',
+        display: 'standalone',
+        icons: [
+          {
+            src: 'icon.svg',
+            sizes: '192x192 512x512',
+            type: 'image/svg+xml'
+          }
+        ]
+      }
+    })
+  ],
+})
