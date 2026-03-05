@@ -113,18 +113,23 @@ export default function Invoice() {
                     </button>
                     <button
                         onClick={handlePrint}
-                        className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold text-gray-700 bg-white border-2 border-gray-200 hover:border-gray-300 rounded-xl shadow-sm transition-colors"
+                        className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-md shadow-blue-600/20 transition-all border border-blue-500"
                     >
                         <Printer size={16} />
-                        <span>Print</span>
+                        <span>Print Invoice</span>
                     </button>
-                    <button
+                    {/* 
+                        Download PDF is temporarily disabled due to a bug.
+                        See: https://github.com/qureshiayaz29/instant-invoice-maker/issues/1
+                        Restore this button when the bug is fixed.
+                    */}
+                    {/* <button
                         onClick={handleDownloadPDF}
                         className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-md shadow-blue-600/20 transition-all border border-blue-500"
                     >
                         <Download size={16} />
                         <span>Download PDF</span>
-                    </button>
+                    </button> */}
                 </div>
             </div>
 
