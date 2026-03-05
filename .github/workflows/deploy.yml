@@ -29,6 +29,9 @@ jobs:
           node-version: 20
           cache: npm
 
+      - name: Force npm registry
+        run: npm config set registry https://registry.npmjs.org/
+
       - name: Downgrade npm (avoid npm v10 bug)
         run: npm install -g npm@9
 
