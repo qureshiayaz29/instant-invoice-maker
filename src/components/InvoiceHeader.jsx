@@ -91,7 +91,7 @@ export default function InvoiceHeader({ invoiceNumber }) {
     return (
         <div className="flex flex-col sm:flex-row justify-between items-start gap-6 w-full">
             {/* Left side: Shop Details */}
-            <div className="flex flex-col gap-4 max-w-sm w-full">
+            <div className="flex flex-col gap-4 max-w-sm w-full order-2 sm:order-1">
                 {/* Logo Area */}
                 <div
                     className={`relative group flex items-center justify-center border-2 border-dashed rounded-xl w-32 h-32 cursor-pointer overflow-hidden transition-colors ${logoUrl ? 'border-transparent' : 'border-gray-300 hover:border-blue-400 bg-gray-50'} ${!logoUrl ? 'print:hidden' : ''}`}
@@ -156,7 +156,7 @@ export default function InvoiceHeader({ invoiceNumber }) {
             </div>
 
             {/* Right side: Invoice ID and Date */}
-            <div className="flex flex-col items-end sm:text-right mt-4 sm:mt-0">
+            <div className="flex flex-col items-start sm:items-end sm:text-right mt-4 sm:mt-0 order-1 sm:order-2 w-full -ml-2 px-2 sm:ml-0 sm:px-0">
                 <h1 className="text-4xl sm:text-5xl font-black text-blue-100 uppercase tracking-tight mb-6">
                     Invoice
                 </h1>

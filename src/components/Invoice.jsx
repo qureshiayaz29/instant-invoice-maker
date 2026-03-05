@@ -26,9 +26,9 @@ export default function Invoice() {
     }, []);
 
     const handlePrint = () => {
-        const hasProducts = products.some(p => p.name.trim() !== '' || p.price > 0 || p.quantity > 0);
+        const hasProducts = !(products.length === 1 && products[0].name.trim() === '');
         if (!hasProducts) {
-            alert("Add items first to your invoice before printing.");
+            alert("Add items to print the invoice");
             return;
         }
         window.print();
@@ -37,9 +37,9 @@ export default function Invoice() {
     const handleDownloadPDF = async () => {
         if (!invoiceRef.current) return;
 
-        const hasProducts = products.some(p => p.name.trim() !== '' || p.price > 0 || p.quantity > 0);
+        const hasProducts = !(products.length === 1 && products[0].name.trim() === '');
         if (!hasProducts) {
-            alert("Add items first to your invoice before downloading.");
+            alert("Add items to download the invoice");
             return;
         }
 
