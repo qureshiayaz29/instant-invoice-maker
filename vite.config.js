@@ -4,12 +4,15 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: '/instant-invoice-maker/',   // ← your GitHub repo name
+  base: '/instant-invoice-maker/',
   test: {
     globals: true,
     environment: 'jsdom',
     setupFiles: './src/tests/setup.js',
     css: false,
+  },
+  build : {
+    outDir: 'dist'
   },
   plugins: [
     react(),
